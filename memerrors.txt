@@ -1,0 +1,24 @@
+$main="../main.php";  	 //會員登入頁面
+$newsmenu="CmLogin.php";  //登入成功畫面，顯示會員基本資料
+
+switch($msgid) {
+	case "001" : 
+	echo "會員資料已經成功新增";
+	echo "<br><a href=$newsmenu>請重新登入</a>";
+	break;
+
+	case "002" :
+	echo "管理者帳號或密碼不存在，請確認後再行登入。";
+	echo "<br><a href=$main>回首頁</a>";
+	break;
+
+	case "003" :
+	echo "您已經登出會員管理頁面。";
+	echo "<br><a href=$main>回首頁</a>";
+	break;
+
+	case "004" :
+	echo "您的會員資料已經更新完成";
+	echo "<br><a href=$main>回首頁</a>";
+	break;
+}								
